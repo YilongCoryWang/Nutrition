@@ -1,0 +1,21 @@
+.infoBox{
+  width: 100%;
+  height: 100%;
+
+  .personalStatistics{
+    width: 22rem;
+    height: 30rem;
+    float: left;
+    background-color: rgba(245,245,245,1);
+  }
+
+  .foodRecord{
+    .foodRecordList{
+      height: 30rem;
+      overflow: hidden;/*触发foodRecordList盒子的BFC, 否则float的div（aside）会覆盖在main上面*/
+      .foodRecordListContent{
+        list-style: none;
+      }
+    }
+  }
+}

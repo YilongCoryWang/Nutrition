@@ -1,0 +1,179 @@
+.personalStatistics{
+  .personalInfo{
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(219,219,219);
+
+    .userWeight{
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: rgba(122,122,122,1);
+      text-align: center;
+      float: left;
+      position: relative;
+      top: 4rem;
+      left: 1rem;
+      color: white;
+
+      .dataValue{
+        font-size: 1.7rem;
+        display: block;
+        margin-top: .6rem;
+      }
+    }
+
+    .userAvatarContainer {
+      //background-color:pink; /*方便看效果 */
+      width: 8rem;
+      height: 11rem;
+      float: left;
+      position: relative;
+      left: calc(50% - 4rem);
+      top: 2rem;
+
+      .userAvatar {
+        width: 8rem;
+        height: 8rem;
+        float: left;
+        position: relative;
+        left: -50%;
+      }
+    }
+
+    .userHeight{
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: rgba(122,122,122,1);
+      text-align: center;
+      float: left;
+      position: relative;
+      top: 4rem;
+      left: 5rem;
+      color: white;
+
+      .dataValue{
+        font-size: 1.7rem;
+        display: block;
+        margin-top: .6rem;
+      }
+    }
+  }
+
+  .dailyStatus{
+    padding: 1rem;
+
+    .calTotal{
+      text-align: center;
+      .calConsumed{
+        float: left;
+        width: 32%;
+        text-align: left;
+        .calValue{
+          font-size: 1.8rem;
+        }
+        .calTitle{
+          padding-left: 0.1rem;
+          color: rgba(98,98,98,1);
+        }
+      }
+      .calGoal{
+        float: right;
+        width: 32%;
+        text-align: left;
+        margin-left: .5rem;
+        .calValue{
+          font-size: 1.8rem;
+        }
+        .calTitle{
+          text-align: right;
+          padding-right: .3rem;
+          color: rgba(98,98,98,1);
+        }
+      }
+    }
+
+    .calBar{
+      margin: 1rem .1rem;
+      .bar{
+        height: 6px;
+        width: 100%;
+        position: relative;
+        background-color: rgb(210,186,243);
+        .barProgress{
+          position: absolute;
+          height: 6px;
+          width: 86%;
+          background-color: rgb(98,0,236);
+        }
+      }
+      .barProgressValue{
+        position: relative;
+        left: 50%;
+        color: rgb(98,98,98);
+        margin: 0.6rem 0rem 1.6rem 0rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+    }
+
+    .calBreakDown{
+      text-align: center;
+      .breakfast{
+        float: left;
+        width: 25%;
+        .calValue{
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        .calTitle{
+          color: rgba(98,98,98,1);
+        }
+      }
+      .lunch{
+        float: left;
+        width: 25%;
+        .calValue{
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        .calTitle{
+          color: rgba(98,98,98,1);
+        }
+      }
+      .dinner{
+        float: left;
+        width: 25%;
+        .calValue{
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        .calTitle{
+          color: rgba(98,98,98,1);
+        }
+      }
+      .snack{
+        float: left;
+        width: 25%;
+        .calValue{
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        .calTitle{
+          color: rgba(98,98,98,1);
+        }
+      }
+    }
+  }
+}
+
+.clearFix:after{
+  height: 0;
+  content: "";
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #ddd;
+}

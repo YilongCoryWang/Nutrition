@@ -1,0 +1,11 @@
+import express from "express";
+import history from "connect-history-api-fallback";
+import getUserInfo from "./routes/getUserInfo";
+
+let app = express();
+app.use(express.static("./public")).use(history()).listen(3000, function (err) {
+    if(!err){
+        console.log("Node server is listening at port 3000...")
+    }
+    app.use("/getUserInfo", getUserInfo);
+})
