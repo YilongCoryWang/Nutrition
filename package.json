@@ -27,7 +27,7 @@
     "eslint-plugin-react": "^7.14.3",
     "formidable": "^1.2.1",
     "fs": "0.0.1-security",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-less": "^4.0.1",
